@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Glory:wght@0,700&display=swap" rel="stylesheet">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OpenWeather API</title>
-  </head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap"
+    rel="stylesheet"
+  />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWeather API</title>
+
   <body>
-    <body>
-        <nav class="navbar navbar-dark bg-primary mb-6" id="new">
-            <div class="container">
-                <a href="#" class="navbar-brand">
-                  <h1 class="sunrise">OpenWeather Weather Wizard</h1></a>
-                  <img src = "img/new_logo_black.png" alt="openWeatherLogo">
-            </div>
-        </nav>
+    <nav class="navbar navbar-dark bg-primary mb-6" id="new">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <h1 class="sunrise">OpenWeather Weather Wizard</h1></a
+        >
+        <img src="img/new_logo_black.png" alt="openWeatherLogo" />
       </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-1">
-              </div>
-           
-    
-      <div class="col-sm-5">
-            <div class="card mt-4">
-              <div class="card-body">
-                <h1 class="sunrise" id="centered">Check the Weather</h1>
-                <h5 class="glory" id="centered_gap">Enter Your Location</p>
-                  <h6 class="glory" id="centered_gap">i.e. Perth, AU or London, GB</p></h6>
-                  </br>
-                <input type="text" id="findCity" class="form-control" placeholder="Location">
-            
-                <br>
-                <p class ="glory" id="centered_gap2"><button class="btn btn-primary-new" id="submit">Submit</button></p>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-5">
+          <div class="card mt-4">
+            <div class="card-body">
+              <h1 class="sunrise">Check the Weather</h1>
+              <h5 class="glory2">Enter Your Location</h5>
+              <h6 class="glory2">i.e. Perth, AU or London, GB</h6>
+              <br />
+              <input
+                type="text"
+                id="findCity"
+                class="form-control"
+                placeholder="Location"
+              />
+
+              <br />
+              <p class="glory2">
+                <button class="btn btn-primary-new" id="submit">Submit</button>
+              </p>
             </div>
           </div>
-          </div>
-        
-  
-          <div class="col-sm-5">
-        <div class="card mt-4" id="weatherBox">
-        
-        </div>
         </div>
 
-        <div class="col-sm-1">
-   
+        <div class="col-sm-5">
+          <div class="card mt-4" id="weatherBox">
+            <div class="card-body">
+              <h3 class="glory6">Welcome to OpenWeather Weather Wizard</h3>
+
+              <h6 class="glory2">Search by country or city.</h6>
+              <p class="glory2">
+                View temperature, summary, highs/lows, and wind speed.
+              </p>
+              <p class="glory2">Your weather will appear . . . here!</p>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-        <footer class="mt-5 p-3 text-center bg-light">
-            <img src="img/new_logo_black.png" alt="weather">
-        </footer>
+
+        <div class="col-sm-1"></div>
+      </div>
+    </div>
+    <footer class="mt-5 p-3 text-center bg-light">
+      <img src="img/new_logo_black.png" alt="weather" />
+    </footer>
+
+    <script src="fetch.js"></script>
+    <script src="weatherBox.js"></script>
+    <script src="app.js"></script>
   </body>
-  <script src="fetch.js"></script>
-  <script src="weatherBox.js"></script>
-  <script src="app.js"></script>
- 
 </html>
